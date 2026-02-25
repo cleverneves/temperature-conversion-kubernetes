@@ -1,19 +1,20 @@
-<div align="center">  
+# Temperature Conversion - Docker & Kubernetes
 
-<h1> Projeto Conversão de Temperatura </h1>
+Projeto laboratório para criação de ambiente em container com Docker e orquestração dos containeres com Kubernetes.
 
-![NodeJs](https://img.shields.io/badge/-Node.js-1e272e?style=for-the-badge&logo=Node.js)&nbsp;
-![Docker](https://img.shields.io/badge/-Docker-1e272e?style=for-the-badge&logo=Docker)&nbsp;
-![Kubernetes](https://img.shields.io/badge/-Kubernetes-1e272e?style=for-the-badge&logo=Kubernetes)&nbsp;
-</div>
+## Pré-requisitos:
+- Docker
+- Kubernetes
 
+## Sobre a aplicação:
+A aplicação foi desenvolvida em Node.js.
+O objetivo da aplicação é fazer a conversão de temperatura
 
-### Sobre o projeto
-O projeto conversão de temperatura é um projeto desenvolvido em NodeJS. 
-O projeto tem como objetivo ser um exemplo para a criação de ambiente com containers usando NodeJS, Docker e Kubernetes.
+## Como utilizar o projeto:
 
-### Objetivo do projeto
-Esse projeto serve de aplicação base e tem como objetivo ser um exemplo para a criação de ambiente com containers usando NodeJS.
+```sh
+# Aplicar o arquivo manifest.yml
+kubectl apply -f k8s/
 
-### Observações do projeto
-A aplicação é exposta usando a porta 8080.
+# A aplicação é exposta na porta 8080.
+```
